@@ -4,51 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-    <DOCTYPE html>
-        <html>
-        <body>
-        <FORM NAME="Calc">
-        <TABLE BORDER=4>
-        <TR>
-        <TD>
-        <INPUT TYPE="text"   NAME="Input" Size="24">
-        <br>
-        </TD>
-        </TR>
-        <TR>
-        <TD>
-        <INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
-        <INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
-        <INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
-        <INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
-        <INPUT TYPE="button" NAME="bracket"  VALUE="  n  " OnClick="Calc.Input.value += '22/7'">
-        <br>
-        <INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
-        <INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
-        <INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
-        <INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
-        <INPUT TYPE="button" NAME="sq"   VALUE="  ^2  " OnClick="Calc.Input.value += '**2'">
-        <br>
-        <INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
-        <INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
-        <INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
-        <INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
-        <INPUT TYPE="button" NAME="mod"   VALUE="  %  " OnClick="Calc.Input.value += '%'">
-        <br>
-        <INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
-        <INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
-        <INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
-        <INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
-        <INPUT TYPE="button" NAME="cube"   VALUE="  ^3  " OnClick="Calc.Input.value += '**3'">
-        <br>
-        </TD>
-        </TR>
-        </TABLE>
-        </FORM>
-        </body>
-        </html>
-        
+            <FORM NAME="Calculator" id="main">          
+           <TABLE id="table">
+            <TR>
+            <TD>
+            <input type="text" id="add"  name="Input">
+            <br>
+            </TD>
+            </TR>
+            <TR>
+            <TD>
+            <input type="button" name="one" value=" 1 " id="one">
+            <input type="button" name="two" value=" 2 " id="two">
+            <input type="button" name="three" value=" 3 " id="three">
+            <input type="button" name="plus" value=" + " id="plus">
+            <input type="button" name="pie" value=" n  " id="pie">
+            <br>
+            <input type="button" name="four" value=" 4 " id="four">
+            <input type="button" name="five" value=" 5 " id="five">
+            <input type="button" name="six" value=" 6 " id="six">
+            <input type="button" name="minus" value=" - " id="minus">
+            <input type="button" name="square" value=" ^2 " id="square">
+            <br>
+            <input type="button" name="seven" value=" 7 " id="seven">
+            <input type="button" name="eight" value=" 8 " id="eight">
+            <input type="button" name="nine"  value=" 9 " id="nine">
+            <input type="button" name="times" value=" x " id="multiply">
+            <input type="button" name="mod"   value=" % " id="mod">
+            <br>
+            <input type="button" name="clear" value=" c " id="clear" >
+            <input type="button" name="zero"  value=" 0 " id="zero">
+            <input type="button" name="equal"  value=" = " id="equal">
+            <input type="button" name="div"   value=" / " id="div">
+            <input type="button" name="cube"  value=" ^3 " id="cube">
+            <br>
+            </TD>
+            </TR>
+            </TABLE>
+            </FORM> 
+
+          
+        <script src="calculator.js"></script>
 </body>
 </html>
